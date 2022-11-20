@@ -1,0 +1,9 @@
+Objective: I created this project to extract text from images to plain text and write it to a text file.
+
+Tools used:
+  - Python
+  - Pytesseract 
+  
+This project basically does the below tasks:
+
+1). Can extract text from image and write it to a plain text file
