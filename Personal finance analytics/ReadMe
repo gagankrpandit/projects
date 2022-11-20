@@ -1,0 +1,7 @@
+I created this project to monitor my personal spends from the monthly bank statements that I receive. This project basically does the below tasks:
+
+1). It takes the password protected pdf bank statements from a folder and decrypts using 'qpdf' software
+2). Then files are modified using 'tabula' module which provides a list of dataframes for each table found in pdf
+3). Once all the dataframes and cleaned and appended into 1 dataframe then it is written into sql using 'sqlalchemy' module
+4). Duplicate columns are deleted based on 'key' column by running sql query from within python using 'pymysql' module
+5). Once data is written into MySQL database, then it is used by Power BI as a source and visualization of the spend analysis takes place.
