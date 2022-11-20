@@ -6,4 +6,4 @@ Tools used:
   
 This project basically does the below tasks:
 
-1). Can extract text from image and write it to a plain text file
+1). Can extract text from an image without noise and write it to a plain text file
