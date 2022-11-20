@@ -3,6 +3,10 @@ import tabula
 from sqlalchemy import create_engine
 import pymysql
 
+# 1 - first download original monthly hdfc bank statement from email
+# 2 - then run qpdf command in CLI (as shown below) in the same directory (use standard input and output file nomenclatures as in earlier files)
+# command: qpdf --decrypt --password=<your password> encrypted_file.pdf decrypted_file.pdf
+
 file_names = os.listdir(r'D:\python\Personal Finance Analysis\HDFC bank statements')
 for filename in file_names:
     if 'output' in filename:
