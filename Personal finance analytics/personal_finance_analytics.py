@@ -35,7 +35,7 @@ for filename in file_names:
         df['key'] = df[col_list[0]].astype(str) + df[col_list[1]].astype(str) + df[col_list[2]].astype(str) + df[col_list[3]].astype(str) + df[col_list[4]].astype(str) + df[col_list[5]].astype(str) + df[col_list[6]].astype(str) 
 
         # Create sqlalchemy engine, Connect to the database
-        engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="11121992", db="testdb"))
+        engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="<your password>", db="<your database name>"))
 
         # Insert whole DataFrame into MySQL
         df.to_sql('hdfc_new', con = engine, if_exists = 'append', chunksize = 1000, index=False)
