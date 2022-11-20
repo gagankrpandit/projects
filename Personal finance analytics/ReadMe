@@ -1,4 +1,11 @@
-I created this project to monitor my personal spends from the monthly bank statements that I receive. This project basically does the below tasks:
+I created this project to monitor my personal spends from the monthly bank statements that I receive. 
+
+Tools used:
+  - Python (for extracting tables from pdf files and writing them to MySQL database)
+  - MySQL (for storing tables in a single table in MySQL database) 
+  - Power BI (for visualizing data from table created above in MySQL) 
+
+This project basically does the below tasks:
 
 1). It takes the password protected pdf bank statements from a folder and decrypts using 'qpdf' software
 2). Then files are modified using 'tabula' module which provides a list of dataframes for each table found in pdf
