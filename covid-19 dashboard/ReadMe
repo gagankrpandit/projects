@@ -1,1 +1,7 @@
 Project: Covid-19 dashboard (India)
+Tools: Python, Power BI
+Python libraries/frameworks: Scrapy, pandas, json
+Data source: www.mygov.in
+
+Description: This project scrapes data from the above mentioned source and then with the help of scrapy it is scraped and formatted to further fetch into Power BI to create 
+data visualizaitons and track daily trend state and region wise.
